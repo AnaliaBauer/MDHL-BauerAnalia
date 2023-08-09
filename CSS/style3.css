@@ -4,10 +4,13 @@
     border: 0px solid red;
 }
 
-
+/* .encabezado{
+    display: flex;
+    flex-direction: row;
+} */
 
 .titulo-encabezado {
-    display: flex;
+    /* display: flex; */
     margin-left: 20px;
     font-family: cursive;
 }
@@ -15,6 +18,7 @@
 p,
 h1,
 h3,
+li,
 a {
     font-family: cursive;
 }
@@ -31,12 +35,12 @@ img {
     max-width: 100%;
 }
 
-li {
+.barra-navegacion >ul>li {
     list-style: none;
-    margin-bottom: 40px;
+    margin-right: 0px;
     top: 450px;
     float: left;
-}
+ }
 
 li a {
     display: flex;
@@ -54,8 +58,28 @@ li a {
 li a:hover{
     background-color: forestgreen;
 }
+
+ 
+
+
+.lista-numerada>li{
+list-style-type: decimal;
+}
+
+.lista-alfabetica>li{
+    list-style-type:lower-alpha;
+}
+
+.lista-puntuada>li{
+list-style-type: disc;
+}
+
 .active{
     background-color: forestgreen;
+}
+
+span{
+    font-weight: bold;
 }
 
 .principal {
@@ -63,27 +87,31 @@ li a:hover{
    flex-direction: column;
    justify-content: center;
    margin-left: 20px;
+   margin-top: 20px;
 }
 
 .logo {
     width: 100px;
-    border: 2px solid white;
-    background-color: white;
-    position:absolute;
-   
+    margin-left: 20px;
+    border: 2px solid black;
+    /* background-color: white; */
+    position: absolute;
+    /* top: 5000; */
+    right: 10px;
 }
 
 .contenedor-logo{
     display: flex;
-    justify-content:flex-end;
+    justify-content:flex-start;
 }
 
 .contenedor-principal{
     display: flex;
     justify-content:space-between;
     align-items:center;
-    margin-right: 100px;
+    margin-right: 110px;
     margin-left: 10px;
+    margin-top: 75px;
 }
 
 
