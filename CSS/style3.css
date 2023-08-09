@@ -17,15 +17,14 @@
 
 p,
 h1,
+h2,
 h3,
 li,
 a {
     font-family: cursive;
 }
 
-h3 {
-    font-style: italic;
-}
+
 
 article>p {
     margin-left: 20px;
@@ -40,7 +39,7 @@ img {
     margin-right: 0px;
     top: 450px;
     float: left;
- }
+}
 
 li a {
     display: flex;
@@ -59,11 +58,9 @@ li a:hover{
     background-color: forestgreen;
 }
 
- 
-
-
 .lista-numerada>li{
 list-style-type: decimal;
+margin-bottom: 10px;
 }
 
 .lista-alfabetica>li{
@@ -129,4 +126,44 @@ span{
     object-fit: cover;
     object-position: 0% 20%;
     display: flex;
+}
+
+.reglas{
+    margin: 20px
+}
+
+.reglas>h3{
+    margin-bottom: 10px;
+}
+
+.horarios{
+    margin: 20px;
+}
+
+.caption {
+    font-style: italic;
+    text-decoration: underline;
+    font-style: italic;
+  text-align: left;
+}
+
+table, th, tr, td{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.info-adicional{
+    margin-top: 20px;
+}
+
+.info-adicional>p{
+    margin-bottom: 30px;
+}
+
+.en-linea{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
 }
